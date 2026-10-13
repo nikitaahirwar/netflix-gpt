@@ -21,7 +21,6 @@ const Login = () => {
 
     const handleButtonClick = () => {
         const message = checkValidData(email.current.value, password.current.value)
-        console.log(message)
         setErrorMessage(message);
         if(message !== null) return;
         if(!isSignInForm){

@@ -5,4 +5,10 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {accept: 'application/json', Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NjBhYTZmZDk4NDhjMzBjNTkyMTQ2MzAyOTQ5MDgwYiIsIm5iZiI6MTc5MTgzMjMyOC44NTQsInN1YiI6IjZhY2QzMTA4ZTBkYWVhNWJjMTZmMmZmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tqeVKgu39-YTY9RjNeETlojr6B9TCWEYAXC8fMXg84Q'}
 };
-export const IMG_CDN = "https://image.tmdb.org/t/p/w200"
+export const IMG_CDN = "https://image.tmdb.org/t/p/w200";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English"},
+  { identifier: "hindi", name: "Hindi"},
+  { identifier: "spanish", name: "Spanish"}
+]
