@@ -3,7 +3,7 @@ export const netflixBackground = 'https://assets.nflxext.com/ffe/siteui/vlv3/f0b
 export const netflixLogo = 'https://occ.a.nflxso.net/dnmt/api/v6/iL4oJVDYZ8KLSrJ6eG2OwtghbfQ/AAAAAQ4TXm1OaapkwYRGseWYrT2HFpAFV7IX9bgV76BxLOD_049HTkgqZ6zq3enQ0gxU1b-868yGZj1I99Ak9oRykNILYsbpT_0d-be9QKbwkD8OfaEdWL-FHZBiORJ9ppzVCM1-mVn63afS.svg';
 export const API_OPTIONS = {
   method: 'GET',
-  headers: {accept: 'application/json', Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NjBhYTZmZDk4NDhjMzBjNTkyMTQ2MzAyOTQ5MDgwYiIsIm5iZiI6MTc5MTgzMjMyOC44NTQsInN1YiI6IjZhY2QzMTA4ZTBkYWVhNWJjMTZmMmZmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tqeVKgu39-YTY9RjNeETlojr6B9TCWEYAXC8fMXg84Q'}
+  headers: {accept: 'application/json', Authorization: 'Bearer' + process.env.REACT_APP_TMDB_KEY, }
 };
 export const IMG_CDN = "https://image.tmdb.org/t/p/w200";
 
@@ -12,3 +12,5 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi"},
   { identifier: "spanish", name: "Spanish"}
 ]
+
+export const OPENAI_KEY = process.env.REACT_APP_OPEN_AI_KEY
